@@ -1,8 +1,8 @@
+numbers = [];
 counts = [];
-for a = 1:100
+for a = 1:200
   s = size(factor(a), 2);
-  if s > 1
-    counts = [counts s];
-  endif
+  counts = [counts s];
+  numbers = [numbers a];
 endfor
-disp(counts)
+plot(numbers, counts);
