@@ -1,3 +1,4 @@
+#!/usr/bin/octave -q
 x = [];
 y = [];
 a = 10;
@@ -7,4 +8,5 @@ for fi = 0: 0.01 :2*pi*5
   x = [x r * cos(fi)];
   y = [y r * sin(fi)];
 endfor
-scatter(x, y, 'black', 'fill')
+scatter(x, y, 'black', 'fill');
+uiwait;

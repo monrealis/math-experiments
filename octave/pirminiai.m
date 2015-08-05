@@ -1,3 +1,4 @@
+#!/usr/bin/octave -q
 numbers = [];
 counts = [];
 for a = 1:10000
@@ -7,3 +8,4 @@ for a = 1:10000
 endfor
 plot(numbers, counts);
 hist(counts, min(counts):max(counts));
+uiwait;
