@@ -1,3 +1,4 @@
+#!/usr/bin/octave -q
 A = [1 2; 3 4];
 save out.mat A
 save -ascii out-a.mat A
