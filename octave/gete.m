@@ -4,7 +4,10 @@ function e = gete(n)
   e = (1 + 1 / n) ^ n;
 endfunction
 
-%!assert(gete(20), e, 0.1)
+%!shared tolerance
+%! tolerance = 0.1;
+%!assert(gete(20), e, tolerance)
 %!test
 %! n = gete(1)
-%! assert(n, e, 1)
+%! tolerance = 1;
+%! assert(n, e, tolerance)
