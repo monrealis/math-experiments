@@ -4,10 +4,16 @@ function e = gete(n)
   e = (1 + 1 / n) ^ n;
 endfunction
 
-%!shared tolerance
+%!shared tolerance, n
 %! tolerance = 0.1;
-%!assert(gete(20), e, tolerance)
+%! n = 20;
+%!function r = execute()
+%!  r = gete(n)
+%!endfunction
+
+%!assert(gete(n), e, tolerance)
+
 %!test
-%! n = gete(1)
+%! n = 1;
 %! tolerance = 1;
-%! assert(n, e, tolerance)
+%! assert(gete(n), e, tolerance)
