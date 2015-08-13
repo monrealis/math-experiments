@@ -17,3 +17,8 @@ endfunction
 %! n = 1;
 %! tolerance = 1;
 %! assert(gete(n), e, tolerance)
+
+%!xtest
+%! n = 0;
+%! tolerance = 1;
+%! assert(gete(n), e, tolerance)
