@@ -1,6 +1,9 @@
 #!/usr/bin/octave -q
 
 function e = gete(n)
+  if (n < 0)
+    error("n is negative")
+  end
   e = (1 + 1 / n) ^ n;
 endfunction
 
@@ -18,7 +21,9 @@ endfunction
 %! tolerance = 1;
 %! assert(gete(n), e, tolerance)
 
-%!xtest
-%! n = 0;
-%! tolerance = 1;
-%! assert(gete(n), e, tolerance)
+#%!xtest
+#%! n = 0;
+#%! tolerance = 1;
+#%! assert(gete(n), e, tolerance)
+
+%!error <negative> gete(-1)
