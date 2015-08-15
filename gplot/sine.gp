@@ -3,5 +3,7 @@ set encoding utf8
 set title 'y=sin(x) grafikas'
 set xlabel 'x ašis'
 set ylabel 'y ašis'
-plot [-3.14:3.14] sin(x)
+set xtics -pi, pi/4
+set ytics -1, 0.1
+plot [-pi:pi] [-1.1:1.1] sin(x)
 pause -1
