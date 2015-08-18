@@ -4,6 +4,7 @@ set title 'y=sin(x) grafikas'
 set xlabel 'x ašis'
 set ylabel 'y ašis'
 set xtics -pi, pi/4
+set xtics('-π' -pi, 'π' pi)
 set ytics -1, 0.1
 unset key
 plot [-pi:pi] [-1.1:1.1] sin(x) with lines, cos(x) with linespoints
