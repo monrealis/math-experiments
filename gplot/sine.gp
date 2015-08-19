@@ -7,5 +7,7 @@ set xtics -pi, pi/4
 set xtics('-π' -pi, 'π' pi)
 set ytics -1, 0.1
 unset key
+set label "(Koordinačių pradžia)" at 0.2,-0.2 left
+set arrow from 0.2, -0.2 to 0, 0
 plot [-pi:pi] [-1.1:1.1] sin(x) with lines, cos(x) with linespoints
 pause -1
