@@ -1,3 +1,4 @@
+#!/usr/bin/env gnuplot
 set encoding utf8
 #set terminal qt size 350,262 enhanced font 'Verdana,10'
 set title 'y=sin(x) grafikas'
